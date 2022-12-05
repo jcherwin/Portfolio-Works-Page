@@ -6,7 +6,7 @@ This project combines the CSS skills of: flexbox, media queries, variables, tran
 
 ## Link
 
-This is a link to the project hosted on GitHub Pages: [https://choosealicense.com/](https://choosealicense.com/)
+This is a link to the project hosted on GitHub Pages: [https://jcherwin.github.io/portfolio-works-page](https://jcherwin.github.io/portfolio-works-page)
 
 ## Usage
 
