@@ -1,0 +1,229 @@
+/* DECLARE VARIABLES */
+:root{
+    --header-gray: #31343D;
+    --highlight-blue: #92CCCD;
+    --title-blue: #435877;    
+    --text-gray: #32333E;
+    --background-white: #EDEDF6;
+}
+/* IMPORTED FONTS */
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("../fonts/SourceSansPro-Regular.otf");
+}
+
+/* ELEMENT SELECTORS */
+body{
+    color: var(--text-gray);
+    background-color: var(--background-white);
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;    
+}
+
+header{    
+    background-color: var(--header-gray);
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+    height: 80px;    
+}
+
+header h1{
+    color: var(--header-gray);
+    background-color: var(--highlight-blue);
+    font-size: 300%;
+    font-weight: 800;
+    padding: 5px 5px 5px 60px;
+}
+
+header nav{
+    display: flex;
+    padding-right: 60px;   
+}
+
+header nav a{
+    color: var(--highlight-blue);
+    font-size: 120%;
+    text-decoration: none;    
+    margin: 5px;
+    border-bottom: var(--highlight-blue) 4px solid;  
+    padding: 5px 10px;
+    transition: color 0.5s, border-bottom 0.5s;  
+}
+
+header nav a:hover{
+    color: var(--background-white);
+    border-bottom: var(--background-white) 4px solid;
+}
+
+/* CLASS SELECTORS */
+.bg-image{
+    display:flex;
+}
+
+.bg-image img{
+    height: 225px;
+    width: 100%;
+}
+
+.bg-image h2{
+    background-color: var(--highlight-blue);
+    color: var(--header-gray);
+    position: absolute;
+    top: 240px;
+    right: 60px;    
+    padding: 5px; 
+    font-size: 200%;
+    font-weight: 600;
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    display: flex;
+    margin: 30px 3% 30px 5%;
+}
+
+.card h3{
+    color: var(--title-blue);
+    font-size: 300%;
+    font-weight: bold;    
+    margin-right: 40px;
+    border-right: var(--title-blue) 3px solid;
+    padding-right: 15px;    
+    text-align: right;
+    width: min-content; /* so the headers take up as little width as possible*/   
+    flex-shrink: 0; /* so the h3 doesnt shrink in comparison to the other flex item in the container */
+    flex-basis: 170px; /* so the headers stay aligned at smaller view widths */
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;    
+}
+
+.project-card{
+    background-color: var(--highlight-blue);
+    display: flex;
+    align-items: flex-end;
+    margin: 6px;
+    border: var(--highlight-blue) 5px solid;   
+}
+
+.project-card img{    
+    opacity: 60%;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s;
+}
+
+.project-card img:hover{
+    opacity: 100%;
+}
+
+.project-card:nth-of-type(even), .project-card:nth-of-type(odd){
+    flex: 40%;
+    height: 120px;
+}
+
+.project-card:nth-of-type(1){
+    flex: 100%;
+    height: 300px;
+}
+
+.project-caption{
+    color: var(--text-gray);
+    background-color: var(--highlight-blue);  
+    position: absolute; /* set the text to absolute rather than the image so it can be positioned over the image in flex */
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.project-caption h4{
+    font-size: 160%;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.contact-links{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-links li{
+    margin: auto;
+    border-bottom: var(--title-blue) 4px solid;  
+    padding: 5px 10px;    
+}
+
+.contact-links li a{
+    color: var(--title-blue);
+    font-size: 120%;
+    text-decoration: none;
+}
+
+/* ID/UNIQUE SELECTORS */
+#about img{
+    width: 140px;
+    height: 140px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 930px) {
+    .project-card:nth-of-type(even), .project-card:nth-of-type(odd){
+        flex: 100%;
+    }
+    .contact-links{
+        flex-direction: column;     
+    }
+}
+
+@media screen and (max-width: 760px) {
+    header{
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0px;
+    }
+    .bg-image h2{
+        top: 370px;
+    }
+    header nav{
+        flex-flow: column;        
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .bg-image h2 {
+        top: 330px;
+      }
+    .card{
+        margin-left: 0%;
+    }
+    .card h3{
+        font-size: 200%;
+        margin-right: 15px;
+        flex-basis: 120px;
+    }
+    .project-caption{
+        margin-bottom: 0;
+    }
+    .project-caption h4{
+        width: min-content;
+    }
+    .contact-links{
+        align-items: start;        
+    }
+    .contact-links li{
+        margin: 0;
+    }
+    .contact-links li a{
+        font-size: 105%;
+    }
+}

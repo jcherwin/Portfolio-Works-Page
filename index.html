@@ -7,17 +7,96 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Portfolio Works Page</title>
+        <meta name="description" content="Contains contact information and a portfolio of web development works">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        
+        <header>
+            <h1>Jcherwin</h1>
+            <nav>                
+                <a href="#about">About Me</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact Me</a>
+                <!--<a href="">Resume</a>-->
+            </nav>            
+        </header>
+        <main class="content">
+            <section class="bg-image">
+                <img src="assets/images/pexels-steve-johnson-2123667.jpg" alt="Different shades of blue oil pant on a canvas">
+                <h2>Welcome to my Portfolio</h2>
+            </section>
+            <section class="portfolio">
+                <article id="about" class="card">
+                    <h3>About Me</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Quam vulputate dignissim suspendisse in est ante in. Nunc lobortis mattis aliquam faucibus purus. 
+                        Morbi enim nunc faucibus a. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. 
+                        <br><br>
+                        Pharetra et ultrices neque ornare aenean. 
+                        Lectus mauris ultrices eros in cursus turpis massa. Amet purus gravida quis blandit turpis cursus in hac habitasse. 
+                        Ultrices sagittis orci a scelerisque purus. Morbi tincidunt augue interdum velit euismod in. 
+                        Habitant morbi tristique senectus et.
+                    </p>
+                    <img src="assets/images/headshot.jpg" alt="A portrait picture of me, Jon">
+                </article>
+                <article id="work" class="card">
+                    <h3>Work</h3>
+                    <div class="projects">
+                        <a class="project-card" id="project1" href="assets/images/pexels-pixabay-265087.jpg">
+                            <img src="assets/images/pexels-pixabay-265087.jpg" alt="A laptop on a desk with pie charts displayed on the screen">
+                            <div class="project-caption">
+                                <h4>Pie Chart Generator</h4>
+                                <p>Mern Stack</p>
+                            </div>
+                        </a>
+                        <a class="project-card" id="project2" href="assets/images/pexels-negative-space-97077.jpg">
+                            <img src="assets/images/pexels-negative-space-97077.jpg" alt="Purple colored code on a computer screen">
+                            <div class="project-caption">
+                                <h4>Purple Matrix Code</h4>
+                                <p>Node/IoT</p>
+                            </div>
+                        </a>
+                        <a class="project-card" id="project3" href="assets/images/pexels-felix-mittermeier-957312.jpg">
+                            <img src="assets/images/pexels-felix-mittermeier-957312.jpg" alt="Chess pieces on a chess board with a black background">
+                            <div class="project-caption">
+                                <h4>Chess</h4>
+                                <p>React/JavaScript/CSS</p>
+                            </div>
+                        </a>
+                        <a class="project-card" id="project4" href="assets/images/pexels-pixabay-415779.jpg">
+                            <img src="assets/images/pexels-pixabay-415779.jpg" alt="Seismograph lines on seismograph paper">
+                            <div class="project-caption">
+                                <h4>Seismograph Simulator</h4>
+                                <p>Mern Stack</p>
+                            </div>
+                        </a>
+                        <a class="project-card" id="project5" href="assets/images/pexels-pixabay-262438.jpg">
+                            <img src="assets/images/pexels-pixabay-262438.jpg" alt="A dart sticking out of a dartboard">
+                            <div class="project-caption">
+                                <h4>Dart Game</h4>
+                                <p>HTML/CSS</p>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+                <article id="contact" class="card">
+                    <h3>Contact Me</h3>
+                    <ul class="contact-links">
+                        <li><a href="">555.555.5555</a></li>
+                        <li><a href="">joncherwin@website.com</a></li>
+                        <li><a href="">GitHub</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Spotify</a></li>
+                    </ul>
+                </article>
+            </section>
+        </main>        
     </body>
 </html>
