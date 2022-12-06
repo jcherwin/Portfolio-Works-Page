@@ -2,7 +2,7 @@
 
 ## Description
 
-This project combines the CSS skills of: flexbox, media queries, variables, transitions, and imported user fonts. It serves as a working example that can be used as a professional job-ready portfolio. This project is also reposponsive on screen sizes as small at 380px in width.
+This project combines the CSS skills of: flexbox, media queries, variables, transitions, and imported user fonts. It serves as a working example that can be used as a professional job-ready portfolio. This project is also responsive on screen sizes as small at 380px in width.
 
 ## Link
 
