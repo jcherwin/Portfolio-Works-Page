@@ -184,6 +184,13 @@ header nav a:hover{
     }
 }
 
+@media screen and (min-width: 930px) {
+    main {
+        width: 80%;
+        margin: auto;
+    }
+}
+
 @media screen and (max-width: 760px) {
     header{
         height: auto;
